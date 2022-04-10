@@ -1,0 +1,329 @@
+<!--
+  Rob Garcia
+  Codecademy
+  March 18, 2022
+  Responsive Club Website
+  index.html // see corresponding CSS file below-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Goo Youth</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap" rel="stylesheet"> 
+  </head>
+<body>
+  <header>
+    <h1>Sonic Youth</h1>
+    <nav>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Music</a></li>
+        <li><a href="#">Video</a></li>
+        <li><a href="#">Gear</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class='intro'>
+      <h1>Sonic Youth</h1>
+    <p>A fan site dedicated to one of the most pioneering bands of the 21st century.  Here you will find a collection of some of my favorite moments from this band's expansive career.</p>
+    </div>
+  </main>
+  <article>
+    <div class="history">
+      <h2>History</h2>
+      <img src="https://img.apmcdn.org/1fb7c79bede3550711f95f9d3e41a2bd42959b73/portrait/cd1bbf-20090709-sonic-youth.jpg">
+      <p>Founded in New York City in 1981.  The world was never the same again.</p>
+    </div>
+    <div class="music">
+      <h2>Music</h2>
+      <img src="https://upload.wikimedia.org/wikipedia/en/b/b2/Sonicyouthgoo.png">
+      <p>Fifteen studio albums and countless EP's, singles and side projects.  They were some prolific mother fuckers.</p>
+    </div>
+    <div class="videos">
+      <h2>Videos</h2>
+      <img src="https://s3.amazonaws.com/images.imvdb.com/video/229858395749-sonic-youth-youth-against-fascism_music_video_ov.jpg?v=2">
+      <p>They started at the beginning of the MTV generation, which resulted in excelent video documentation of the band's feroucious live performances.</p>
+    </div><div class="gear">
+      <h2>Gear</h2>
+      <img src="https://townsquare.media/site/838/files/2018/10/sonic-youth-gear.jpg">
+      <p>So many guitars. So many pedals. So many amps. So much to drool for.</p>
+    </div>
+  </article>
+  <footer>
+      <p>Created by Rob Garcia, 2022</p>
+  </footer>
+</body>
+</html>
+
+/* styles.css */
+* {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    margin: 0;
+  }
+  html {
+    background-color: pink;
+  }
+  body {
+    padding-top: 80px;
+  }
+
+/* HEADER SECTION */
+header {
+  overflow: hidden;
+  width: 100%;
+  top: 0;
+  margin: 0 auto;
+  padding: 10px 0;
+  z-index: 10;
+  position: fixed;
+  background-color: pink;
+}
+header h1 {
+  border: 2px solid black;
+  float: left;
+  margin-left: 20px;
+  padding: .25rem;
+  font-size: 1.5rem;
+}
+nav {
+  float: right;
+  padding-top: .75rem;
+}
+nav ul {
+  margin-right: 20px;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+  margin-left: 10px;
+  position: relative;
+}
+nav a {
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+}
+nav a:hover {
+  background-color: black;
+  color: pink;
+  transition: all ease-in-out 400ms;
+}
+
+/* MAIN CONTENT */
+main {
+    display: flex;
+    background-image: url('https://townsquare.media/site/838/files/2017/11/sonic-youth.jpg?w=1200&h=0&zc=1&s=0&a=t&q=89');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+}
+.intro {
+  display: block;
+  height: auto;
+  width: 300px;
+  background-color: lightblue;
+  margin: 50px auto auto 50px;
+  padding: 20px;
+  opacity: .8;
+}
+.intro h1 {
+  font-size: 2rem;
+}
+article {
+     display: flex;
+     width: 90%;
+     margin-left: auto;
+     margin-right: auto;
+    justify-content: center;
+     align-items: space-around;
+     flex-wrap: wrap;
+   }
+   article h2 {
+     font-size: 1.25rem;
+   }
+   .history {
+     display: flex;
+     background-color: lightblue;
+     width: 25%;
+     height: auto;
+     padding: 1rem;
+margin: 2rem;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+   }
+   .history img {
+     max-width: 90%;
+     padding: 10px 10px;
+   }
+    .music {
+     display: flex;
+     background-color: lightblue;
+     width: 25%;
+     height: auto;
+     padding: 1rem;
+margin: 2rem;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+   }
+   .music img {
+     max-width: 90%;
+     padding: 10px 10px;
+   }
+    .videos {
+     display: flex;
+     background-color: lightblue;
+     width: 25%;
+     height: auto;
+     padding: 1rem;
+     margin: 2rem;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+   }
+   .videos img {
+     max-width: 90%;
+     padding: 10px 10px;
+   }
+    .gear {
+     display: flex;
+     background-color: lightblue;
+     width: 25%;
+     height: auto;
+     padding: 1rem;
+     margin: 2rem;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+   }
+   .gear img {
+     max-width: 90%;
+     padding: 10px 10px;
+   }
+ 
+   /* Footer */
+   footer {
+     margin-top: 20px;
+     background-color: lightblue;
+     width: 100%;
+     overflow: hidden;
+     padding: 5px;
+     line-height: 20%;
+     padding: 20px;
+   }
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-width: 767px) {
+   html {
+    background-color: lightblue;
+  }
+  header {
+    background-color: lightblue;
+    align-content: center;
+  }
+  header h1 {
+    text-align: center;
+    border: none;
+    width: 100%;
+    margin:  5px auto auto auto;
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  nav {
+    float: none;
+    margin: auto;
+    align-content: center;
+    text-align: center;
+  }
+  nav ul {
+    height: 260px;
+     }
+  body {
+    padding-top: 260px;
+  }
+  nav li {
+    display: block;
+    flex-direction: column;
+    text-align: center;
+  }
+  nav a {
+        font-size: 2rem;
+  }
+  nav a:hover {
+  background-color: black;
+  color: lightblue;
+  transition: all ease-in-out 400ms;
+}
+main {
+    display: block;
+    background-image: url('');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+}
+.intro {
+  display: block;
+  height: auto;
+  width: 80%;
+  background-color: #EEC93E;
+  margin: 80px auto;
+  padding: 20px;
+  opacity: .8;
+
+}
+.intro h1 {
+  display: none;
+}
+.intro p {
+  font-size: 2rem;
+}
+article {
+     display: flex;
+     flex-direction: column;
+     height: auto;
+     width: 90%;
+     margin-left: auto;
+     margin-right: auto;
+    justify-content: center;
+   }
+.history {
+     width: 80%;
+     height: auto;
+     padding-top: 3rem;
+     margin-top: 10px;
+}
+.music {
+    flex-direction: column;
+     width: 80%;
+     height: auto;
+     padding-top: 1rem;
+     margin: 0;
+}
+.videos {
+     width: 80%;
+     height: auto;
+     padding-top: 1rem;
+     margin: 0;
+}
+.gear {
+     width: 80%;
+     height: auto;
+     padding-top: 1rem;
+     margin: 0;
+}
+
+ }
