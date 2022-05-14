@@ -1,6 +1,6 @@
 # Rob Garcia
 # This script was created to predict the amount of honey produced in the year 2050.  
-# This is accomplished by creating a linear regression model of our sample data.
+# This is accomplished by creating a linear regression model of our sample data using the scikit-learn library.
 # A NumPy array is created to hold predicted honey production amounts using the new model
 
 import codecademylib3_seaborn
