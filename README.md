@@ -9,7 +9,7 @@ Since then I have also completed the sequence of lessons for learning Go and SQL
 * Go
 * Full Stack Engineering
 
-###Skills Included in Full Stack Engineering course
+### Skills Included in Full Stack Engineering course
 * HTML
 * CSS
 * JavaScript
